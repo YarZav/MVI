@@ -47,4 +47,19 @@ android {
 
 dependencies {
     implementation 'androidx.activity:activity-compose:1.9.0'
+
+    // MVI
+    def orbitVerion = '4.5.0'
+    implementation "org.orbit-mvi:orbit-viewmodel:$orbitVerion"
+    implementation "org.orbit-mvi:orbit-compose:$orbitVerion"
+
+    // KTOR core
+    def ktorVersion = '2.2.3'
+    implementation "io.ktor:ktor-client-core:$ktorVersion"
+    implementation "io.ktor:ktor-client-android:$ktorVersion"
+    implementation "io.ktor:ktor-client-content-negotiation:$ktorVersion"
+    implementation "io.ktor:ktor-serialization-kotlinx-json:$ktorVersion"
+
+    // Serialization
+    implementation "org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.0"
 }
